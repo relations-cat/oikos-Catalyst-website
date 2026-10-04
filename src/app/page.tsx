@@ -35,8 +35,14 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
+              href="/apply"
+              className="rounded-full bg-brand-sky px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-brand-sky-dark"
+            >
+              Apply Now
+            </Link>
+            <Link
               href="/about"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-white/90"
+              className="rounded-full border border-white px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               Learn More
             </Link>
@@ -169,6 +175,21 @@ export default function HomePage() {
       <section className="bg-muted/60">
         <Reveal className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-8 md:grid-cols-3">
+            <div className="rounded-2xl bg-primary p-8 text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <h3 className="text-lg font-bold">Kick starting: For Startups</h3>
+              <p className="mt-4 text-sm leading-relaxed text-white/85">
+                Does your startup align with our mission and you are eager to have a
+                chance to participate at our event? Please apply with the link below!
+                P.S. there are no fees to apply and participate at our event!
+              </p>
+              <Link
+                href="/apply"
+                className="mt-5 inline-block rounded-full bg-brand-sky px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-brand-sky-dark"
+              >
+                Apply Now
+              </Link>
+            </div>
+
             <div className="rounded-2xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
               <h3 className="text-lg font-bold text-primary">
                 Networking: For Investors
@@ -183,23 +204,6 @@ export default function HomePage() {
               >
                 Get in touch →
               </a>
-            </div>
-
-            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <h3 className="text-lg font-bold text-primary">
-                Kick starting: For Startups
-              </h3>
-              <p className="mt-4 text-sm leading-relaxed text-foreground/75">
-                Does your startup align with our mission and you are eager to have a
-                chance to participate at our event? Please apply with the link below!
-                P.S. there are no fees to apply and participate at our event!
-              </p>
-              <Link
-                href="/apply"
-                className="mt-5 inline-block text-sm font-semibold text-primary underline decoration-brand-sky decoration-2 underline-offset-4"
-              >
-                Apply now →
-              </Link>
             </div>
 
             <div className="rounded-2xl border border-border bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import ApplicationForm from "@/components/ApplicationForm";
 
 export const metadata: Metadata = {
   title: "Apply",
   description: "Apply to pitch your sustainable startup at oikos Catalyst.",
 };
 
-const requirements = ["Be an independent legal entity", "Be a sustainable startup"];
+const FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLScPMCwN5y6Wt9DtCbAkbW4nAuOIYehMov4y3ecSf4WBXyj6aQ/viewform";
 
 export default function ApplyPage() {
   return (
@@ -36,28 +36,29 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="border-b border-border bg-white">
-        <div className="mx-auto max-w-3xl px-6 py-12">
-          <h2 className="text-lg font-bold text-primary">Application Requirements</h2>
-          <ul className="mt-4 space-y-2">
-            {requirements.map((req) => (
-              <li
-                key={req}
-                className="flex items-start gap-3 text-sm text-foreground/80"
-              >
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-sky text-xs font-bold text-foreground">
-                  ✓
-                </span>
-                {req}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       <section className="bg-muted/60">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <ApplicationForm />
+          <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-sm">
+            <iframe
+              src={`${FORM_URL}?embedded=true`}
+              title="oikos Catalyst application form"
+              className="block h-[3100px] w-full md:h-[2700px]"
+            >
+              Loading…
+            </iframe>
+          </div>
+          <p className="mt-4 text-center text-sm text-foreground/70">
+            Form not loading?{" "}
+            <a
+              href={FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary underline decoration-brand-sky decoration-2 underline-offset-4"
+            >
+              Open it in a new tab
+            </a>
+            .
+          </p>
         </div>
       </section>
     </>
