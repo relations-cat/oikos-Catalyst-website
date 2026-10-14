@@ -170,37 +170,6 @@ export default function PastEventsPage() {
             </p>
           </div>
 
-          <h3 className="mt-10 text-lg font-bold text-primary">How It Works</h3>
-          <div className="mt-4 space-y-5 leading-relaxed text-foreground/80">
-            <p>
-              Over the past three editions, Catalyst has brought together sustainable
-              startups, industry experts, investors, and students at the SQUARE at the
-              University of St.Gallen. The event follows a clear and engaging format
-              designed to give each startup the opportunity to present its idea,
-              receive valuable feedback, and connect with a wider audience.
-            </p>
-            <p>
-              Each participating startup has five minutes to deliver an elevator
-              pitch, introducing its business, the problem it addresses, and the
-              solution it offers. Following the pitch, the three-member jury has the
-              opportunity to ask follow-up questions and learn more about the
-              startup&apos;s potential, impact, and business model.
-            </p>
-            <p>
-              Once all startups have presented, the jury discusses the pitches and
-              selects the winner of the Jury Prize. At the same time, the audience gets
-              involved by voting for the startup they believe should receive the
-              Audience Prize.
-            </p>
-            <p>
-              The competition is followed by a networking Apéro, giving students the
-              chance to engage directly with the participating startups, jury members,
-              and other industry experts. This creates an informal setting for
-              exchanging ideas, building connections, and exploring opportunities
-              beyond the competition itself.
-            </p>
-          </div>
-
           <h3 className="mt-10 text-lg font-bold text-primary">Testimonials</h3>
           <div className="mt-4 space-y-5">
             {testimonials2024.map((t) => (

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import GoogleFormEmbed from "@/components/GoogleFormEmbed";
 
 export const metadata: Metadata = {
   title: "Apply",
@@ -38,15 +39,10 @@ export default function ApplyPage() {
 
       <section className="bg-muted/60">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-sm">
-            <iframe
-              src={`${FORM_URL}?embedded=true`}
-              title="oikos Catalyst application form"
-              className="block h-[3100px] w-full md:h-[2700px]"
-            >
-              Loading…
-            </iframe>
-          </div>
+          <GoogleFormEmbed
+            src={`${FORM_URL}?embedded=true`}
+            title="oikos Catalyst application form"
+          />
           <p className="mt-4 text-center text-sm text-foreground/70">
             Form not loading?{" "}
             <a
