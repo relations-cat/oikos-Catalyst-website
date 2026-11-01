@@ -46,30 +46,24 @@ export default function TeamPage() {
           </div>
         </Reveal>
 
-        <div className="mt-16 space-y-14">
-          {members.map((m, i) => (
+        <div className="mt-16 space-y-16">
+          {members.map((m) => (
             <Reveal key={m.name}>
-              <div
-                className={`flex flex-col items-center gap-6 sm:gap-10 ${
-                  i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-                }`}
-              >
-                <div className="relative aspect-[4/5] w-full max-w-[300px] shrink-0 overflow-hidden rounded-2xl shadow-md sm:w-[300px]">
+              <div className="flex flex-col items-center text-center">
+                <div className="relative aspect-[4/5] w-full max-w-[320px] overflow-hidden rounded-2xl shadow-md">
                   <Image
                     src={`/images/team/${m.photo}.jpg`}
                     alt={`${m.name}, ${m.role}`}
                     fill
-                    sizes="300px"
+                    sizes="320px"
                     quality={95}
                     className="object-cover"
                   />
                 </div>
-                <div className="text-center sm:flex-1 sm:text-left">
-                  <h2 className="text-2xl font-bold text-primary">{m.name}</h2>
-                  <p className="mt-2 inline-block rounded-full bg-brand-sky/40 px-4 py-1 text-sm font-semibold text-primary-dark">
-                    {m.role}
-                  </p>
-                </div>
+                <h2 className="mt-6 text-2xl font-bold text-primary">{m.name}</h2>
+                <p className="mt-2 inline-block rounded-full bg-brand-sky/40 px-4 py-1 text-sm font-semibold text-primary-dark">
+                  {m.role}
+                </p>
               </div>
             </Reveal>
           ))}
