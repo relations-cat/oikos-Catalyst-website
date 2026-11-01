@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { label: "Active oikos St.Gallen members", value: "160+" },
+  { label: "Active oikos St.Gallen members", value: "100+" },
   { label: "Unique oikos St.Gallen projects", value: "11" },
   { label: "Pitching competitions hosted", value: "3" },
 ];
@@ -128,7 +128,7 @@ export default function AboutPage() {
         <Reveal className="mx-auto max-w-3xl space-y-5 px-6 py-16 leading-relaxed text-foreground/80">
           <p className="border-l-4 border-brand-sky pl-5">
             We are part of oikos St.Gallen, a non-profit organization based at the
-            University of St.Gallen. With over 160 active members and 11 unique
+            University of St.Gallen. With over 100 active members and 11 unique
             projects, oikos St.Gallen is the largest group at the university working to
             promote sustainability and create a positive impact.
           </p>

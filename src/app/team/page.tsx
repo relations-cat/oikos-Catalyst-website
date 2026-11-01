@@ -26,7 +26,7 @@ export default function TeamPage() {
             Team
           </p>
           <h1 className="mt-3 text-4xl font-extrabold leading-tight sm:text-5xl">
-            Meet the Team
+            Meet the oikos Catalyst Team 2026/2027
           </h1>
         </div>
       </section>
